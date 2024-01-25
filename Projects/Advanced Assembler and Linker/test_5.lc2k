@@ -1,0 +1,19 @@
+	lw		2	5	Stack
+like	sw		1	0	God
+Woah	beq		1	3	2
+	lw		4	2	Fam
+	sw	1	1	Stack
+        lw      3       4       done
+        lw      2       3       6
+        jalr    2       2
+        add     4       0       1
+Jump    beq     0       0       Loop
+Loop    noop
+        add     0       3       0
+        beq     1       5       Jump
+        nor     3       4       7
+done    halt
+Grill	.fill	like
+	.fill	Stack
+Famer	.fill	Jesus
+shake	.fill	Anki

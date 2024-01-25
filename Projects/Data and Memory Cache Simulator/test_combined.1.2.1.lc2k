@@ -1,0 +1,13 @@
+        lw          0       1       five       ; $1 = 5
+        lw          0       4       SubAdr     ; Store address of SubAdr
+start   nor        4       7         0         ; Store return address and jump to SubAdr
+        beq         0       1       done       ; Finish if $1 == 0
+        beq         0       0       start      ; Otherwise continue (keep calling SubAdr).
+done    halt
+subOne  lw          0       2       neg1       ; $2 = -1
+        add         1       2       1          ; $1 = $1 - 1
+        jalr        7       6                  ; Jump back to where we were called from (main.as)
+        halt
+five    .fill       5
+neg1    .fill       -1
+SubAdr  .fill       subOne                     ; Define where our function definition starts
