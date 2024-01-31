@@ -15,3 +15,4 @@ A solid, detailed understanding of how computers are designed and implemented, i
 
 
 Resource: [Computer-Architecture](https://www.eecs.umich.edu/courses/eecs470/)
+[cpp_cheatsheet](https://github.com/mortennobel/cpp-cheatsheet)
