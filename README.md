@@ -12,6 +12,16 @@ A solid, detailed understanding of how computers are designed and implemented, i
 - SystemVerilog
 - Memory
 
+## EECS 470 Overview
+- high level understanding of moder computer architecture
+    - Dynamic out of order processing
+    - static out of order processing
+    - memory hierarchy issues and improvement
+    - multi-processor issues
+    - power and reliability issuses
+- low level understanding of moder computer architecture
+    - all functions in a given component will need to perform
+    - how difficult certain tasks in hardware
 
 
 Resource: 
