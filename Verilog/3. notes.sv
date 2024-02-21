@@ -246,14 +246,26 @@ endclass
 covergroup cg;
   coverpoint class_ptr.member;
 endcovergroup
+initial begin
+    cg = new();
+    repeat(4)begin
+      a=$random();b=$random();
+      cg.sample();//record the values 
+    end
+end
 
 // Interface
-interface MyInterface;
+interface MyInterface(input bit clk);
   logic signal;
+  bit[2:0] a;
 endinterface
 
 // Virtual Interface
 virtual MyInterface vif;
+/*
+class to module: software-hardware (int,logic...)
+module to module: hardware->hardware (wire...)
+*/
 
 // Nonblocking
 always @(posedge clk) begin
